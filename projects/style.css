@@ -1,0 +1,40 @@
+main {
+  height: 100vh;
+}
+.timeline-number {
+  font-size: 20px;
+  background-color: lightpink;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.timelineItem {
+  border-bottom: 0.5px dashed lightblue;
+}
+
+@media (min-width: 992px) {
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 30px;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #goal {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #scopes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #primary {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #timeline {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+}
